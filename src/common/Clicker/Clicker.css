@@ -1,0 +1,43 @@
+
+
+.clickerDesign {
+
+    height: 4em;
+    width: 7em;
+
+    border-radius: 1em;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.registerClickDesign {
+
+    transition: 0.3s;
+    background-color: lightgreen;
+
+}
+
+.registerClickDesign:hover {
+
+    transition: 0.3s;
+    background-color: green;
+
+}
+
+.changePageClickDesign {
+    transition: 0.3s;
+    background-color: lightblue;
+}
+
+.changePageClickDesign {
+    transition: 0.3s;
+    background-color: cadetblue;
+}

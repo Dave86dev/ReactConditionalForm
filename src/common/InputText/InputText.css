@@ -1,0 +1,10 @@
+
+.inputDesign {
+
+    height: 2.5em;
+    width: 10em;
+
+    border-radius: 1em;
+
+    border: 0.2em solid darkcyan;
+}
