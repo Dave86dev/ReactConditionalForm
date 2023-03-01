@@ -25,8 +25,9 @@ export const Register = () => {
     const [page, setPage] = useState(0);
 
     const InputHandler = (e) => {
-        setUser((prevState)=>({...prevState, 
-            [e.target.name] : e.target.value           
+        setUser((prevState) => ({
+            ...prevState,
+            [e.target.name]: e.target.value
         }));
     }
 
@@ -70,7 +71,7 @@ export const Register = () => {
                                 />
                             </div>
                             <div className="formDivider">
-                            <InputText
+                                <InputText
                                     name={"email"}
                                     type={"email"}
                                     value={user.email}
@@ -83,6 +84,47 @@ export const Register = () => {
                                     type={"text"}
                                     value={user.phone}
                                     placeholder={"write your phone"}
+                                    changeBehaviour={InputHandler}
+
+                                />
+                            </div>
+                        </div>
+                    }
+
+                    {page === 1 &&
+                        <div className="page0InputsDesign">
+                            <div className="formDivider">
+                                <InputText
+                                    name={"country"}
+                                    type={"text"}
+                                    value={user.country}
+                                    placeholder={"write your country"}
+                                    changeBehaviour={InputHandler}
+                                />
+                                <InputText
+
+                                    name={"city"}
+                                    type={"text"}
+                                    value={user.city}
+                                    placeholder={"write your city"}
+                                    changeBehaviour={InputHandler}
+
+                                />
+                            </div>
+                            <div className="formDivider">
+                                <InputText
+                                    name={"street"}
+                                    type={"text"}
+                                    value={user.street}
+                                    placeholder={"write your street"}
+                                    changeBehaviour={InputHandler}
+                                />
+                                <InputText
+
+                                    name={"streetNumber"}
+                                    type={"text"}
+                                    value={user.streetNumber}
+                                    placeholder={"write your street number"}
                                     changeBehaviour={InputHandler}
 
                                 />
